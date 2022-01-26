@@ -46,7 +46,6 @@ header {
   color: #3d4ff3;
 }
 .banner-title {
-  /* font-family: "Bebas Neue", cursive; */
   font-family: "Anton", sans-serif;
   font-weight: normal;
   font-size: 80px;
@@ -91,7 +90,7 @@ header {
 }
 .category-title::before {
   content: "";
-  border-left: 8px solid #fa804c;
+  border-left: 8px solid royalblue;
   border-radius: 10%;
   margin-right: 10px;
 }
@@ -179,4 +178,43 @@ header {
   font-size: 16px;
   line-height: 26px;
   color: #3e3e3e;
+}
+
+/* --------------------------
+Media query for small devices
+-------------------------- */
+@media screen and (max-width: 768px) {
+  .custom-navbar-brand {
+    text-decoration: none;
+    font-size: 22px;
+    color: #3e3e3e;
+    font-family: "Anton", sans-serif;
+  }
+  .nav-link {
+    text-align: center;
+    margin-left: 0;
+    padding: 10px;
+  }
+  .banner-title {
+    text-align: center;
+    margin-top: 46px;
+    font-family: "Anton", sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 70px;
+    color: #363958;
+  }
+  .banner-desc {
+    text-align: center;
+  }
+  .buy-now-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .category-title {
+    color: #363958;
+    font-family: "Anton", sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+  }
 }
